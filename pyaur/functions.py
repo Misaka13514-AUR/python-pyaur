@@ -35,9 +35,8 @@ def fetch_aur(aur_username):
 
 
 def parse_df(df):
-    packages = []
+    packages = {}
     for index, row in df.iterrows():
-        packages.append(
-            ArchlinuxUserRepositoryPackage(row['Name'], row['Version'],
-                                           row['Description']))
+        packages[row['Name']] = ArchlinuxUserRepositoryPackage(
+            row['Name'], row['Version'], row['Description'])
     return packages
