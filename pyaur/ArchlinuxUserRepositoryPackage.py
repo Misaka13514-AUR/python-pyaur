@@ -22,6 +22,14 @@ class ArchlinuxUserRepositoryPackage:
                     f"https://{github_username}:{github_token}@github.com/" \
                     + f"{github_repo_owner}/{name}.git"
 
+    def diff(self, package):
+        if self.name != package.name \
+           or self.version != package.version \
+           or self.description != package.description:
+            return True
+        else:
+            return False
+
     def create(self):
         if not mirror:
             print('Mirror is not enabled.')
