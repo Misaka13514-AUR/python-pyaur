@@ -2,6 +2,7 @@ import os
 import sys
 import requests
 from envconfig import *
+from livecheck import fetch_live_ver
 
 
 class ArchlinuxUserRepositoryPackage:
@@ -70,3 +71,6 @@ class ArchlinuxUserRepositoryPackage:
                 "description": self.description,
                 "homepage": self.pretty_url
             })
+
+    def livecheck(self):
+        return fetch_live_ver(self.name)
