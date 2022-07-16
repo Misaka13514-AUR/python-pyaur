@@ -5,9 +5,9 @@ from envconfig import *
 
 if __name__ == '__main__':
     env_check()
-    if os.path.exists('packages.csv'):
-        print('Reading old packages.csv...')
-        df = pd.read_csv('packages.csv')
+    if os.path.exists('packages.tsv'):
+        print('Reading old packages.tsv...')
+        df = pd.read_csv('packages.tsv', encoding='utf-8', sep='\t')
         packages = parse_df(df)
     else:
         packages = {}
@@ -70,5 +70,5 @@ if __name__ == '__main__':
     if len(livecheck_no_update_list) > 0:
         print(f"Up to date packages: {livecheck_no_update_list}")
 
-    print('Saving packages.csv...')
-    df_new.to_csv('packages.csv', index=False)
+    print('Saving packages.tsv...')
+    df_new.to_csv('packages.tsv', index=False, encoding='utf-8', sep='\t')
