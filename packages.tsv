@@ -1,11 +1,12 @@
 Name	Version	Votes	Popularity?	Description	Maintainer
-anime4k	4.0.1-3	3	0.96	A High-Quality Real Time Upscaler for Anime Video	Misaka13514
-bbg	20220717-1	4	3.85	A static blog generator built with electron	zzjzxq33
-bbg-git	20220717.r0.40686ab-1	2	1.93	A static blog generator built with electron	Misaka13514
-canokey-usbip-git	r1066.a88eaa87-1	0	0.0	A virtual canokey based on USB/IP	Misaka13514
-docsify-cli	4.4.4-1	2	0.96	A magical documentation generator	Misaka13514
-easyeda-bin	6.5.8-1	7	1.24	A Simple and Powerful Electronic Circuit Design Tool	v.prokopyev
-easyeda-pro-bin	1.7.31-1	2	1.92	EasyEDA Professional Edition	Misaka13514
-gqrx-scanner	1.0.3-2	0	0.0	A frequency scanner for Gqrx Software Defined Radio receiver	Misaka13514
-lceda-pro-bin	1.7.31-1	3	1.48	立创EDA专业版，专业、强大的国产PCB设计工具，永久免费全新的交互式布线引擎，流畅，不卡顿，完全的独立自主知识产权，让您放心专注于设计，下一代工程师的首选EDA工具	taotieren
+anime4k	4.0.1-3	6	1.38	A High-Quality Real Time Upscaler for Anime Video	Misaka13514
+bbg	20221001-1	5	0.99	A static blog generator built with electron	zzjzxq33
+bbg-git	20220809.r9.2b91f0f-1	3	0.64	A static blog generator built with electron	Misaka13514
+canokey-usbip-git	r2.e9db44f-1	0	0.0	A virtual canokey based on USB/IP	Misaka13514
+docsify-cli	4.4.4-1	2	0.17	A magical documentation generator	Misaka13514
+easyeda-bin	6.5.15-1	7	0.7	A Simple and Powerful Electronic Circuit Design Tool	v.prokopyev
+easyeda-pro-bin	1.7.31-3	2	0.82	EasyEDA Professional Edition	Misaka13514
+gqrx-scanner	1.0.4-1	0	0.0	A frequency scanner for Gqrx Software Defined Radio receiver	Misaka13514
+lceda-pro-bin	1.8.28-1	5	1.35	免费、专业、强大的国产PCB设计工具	taotieren
 python-ite8291r3-ctl-git	r22.d2c490a-1	0	0.0	ITE 8291 (rev 0.03) userspace driver	Misaka13514
+whitesur-icon-theme	2022.08.30-1	1	0.04	MacOS Big Sur like icon theme for linux desktops	Misaka13514

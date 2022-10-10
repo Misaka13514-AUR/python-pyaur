@@ -47,6 +47,10 @@ def fetch_live_ver(name):
     if name == 'docsify-cli':
         return fetch_gh_latest_tag('docsifyjs', 'docsify-cli')
 
+    if name == 'whitesur-icon-theme':
+        return fetch_gh_latest_tag('vinceliuice',
+                                   'WhiteSur-icon-theme').replace('-', '.')
+
     if name == 'easyeda-bin':
         return fetch_easyeda_latest_ver('easyeda-bin')
 
