@@ -47,6 +47,9 @@ def fetch_live_ver(name):
     if name == 'docsify-cli':
         return fetch_gh_latest_tag('docsifyjs', 'docsify-cli')
 
+    if name == 'mastodon-twitter-sync':
+        return fetch_gh_latest_tag('klausi', 'mastodon-twitter-sync')
+
     if name == 'whitesur-icon-theme':
         return fetch_gh_latest_tag('vinceliuice',
                                    'WhiteSur-icon-theme').replace('-', '.')
