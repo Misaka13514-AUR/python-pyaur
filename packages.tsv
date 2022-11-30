@@ -1,13 +1,13 @@
 Name	Version	Votes	Popularity?	Description	Maintainer
-anime4k	4.0.1-3	6	1.06	A High-Quality Real Time Upscaler for Anime Video	Misaka13514
-bbg	20221031-1	6	1.56	A static blog generator built with electron	zzjzxq33
-bbg-git	20220809.r9.2b91f0f-1	3	0.31	A static blog generator built with electron	Misaka13514
+anime4k	4.0.1-3	6	0.92	A High-Quality Real Time Upscaler for Anime Video	Misaka13514
+bbg	20221031-1	6	1.35	A static blog generator built with electron	zzjzxq33
+bbg-git	20220809.r9.2b91f0f-1	3	0.23	A static blog generator built with electron	Misaka13514
 canokey-usbip-git	r2.e9db44f-1	0	0.0	A virtual canokey based on USB/IP	Misaka13514
-docsify-cli	4.4.4-1	2	0.08	A magical documentation generator	Misaka13514
-easyeda-bin	6.5.22-1	7	0.51	A Simple and Powerful Electronic Circuit Design Tool	v.prokopyev
-easyeda-pro-bin	1.8.39-1	2	0.57	EasyEDA Professional Edition	Misaka13514
+docsify-cli	4.4.4-1	2	0.06	A magical documentation generator	Misaka13514
+easyeda-bin	6.5.22-1	7	0.45	A Simple and Powerful Electronic Circuit Design Tool	v.prokopyev
+easyeda-pro-bin	1.8.39-1	2	0.5	EasyEDA Professional Edition	Misaka13514
 gqrx-scanner	1.0.4-1	0	0.0	A frequency scanner for Gqrx Software Defined Radio receiver	Misaka13514
-lceda-pro-bin	1.9.8-1	5	0.64	免费、专业、强大的国产PCB设计工具	taotieren
+lceda-pro-bin	1.9.20-2	5	0.48	免费、专业、强大的国产PCB设计工具	taotieren
 mastodon-twitter-sync	1.8.1-1	0	0.0	Synchronizes posts from Mastodon to Twitter and back	Misaka13514
 python-ite8291r3-ctl-git	r22.d2c490a-1	0	0.0	ITE 8291 (rev 0.03) userspace driver	Misaka13514
 whitesur-icon-theme	2022.11.17-1	0	0.0	MacOS Big Sur like icon theme for linux desktops	Misaka13514

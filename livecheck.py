@@ -18,10 +18,7 @@ def fetch_gh_latest_tag(owner, repo):
 
 def fetch_easyeda_latest_ver(name):
     # https://easyeda.com/api/latestClientVersion
-    if name.startswith('easyeda'):
-        response = requests.get("https://easyeda.com/page/download")
-    if name.startswith('lceda'):
-        response = requests.get("https://lceda.cn/page/download")
+    response = requests.get("https://easyeda.com/page/download")
     if response.status_code != 200:
         print(f'Failed to fetch EasyEDA website when livechecking {name}.')
         sys.exit(1)
@@ -30,6 +27,20 @@ def fetch_easyeda_latest_ver(name):
         x_path = "//table[1]/tr[3]/td[3]/div/div/span[2]/a"
     else:
         x_path = "//table[1]/tr[2]/td[3]/div/div/span[2]/a"
+    dl_link = content.xpath(x_path)[0].get('href')
+    return '.'.join(dl_link.split('-')[-1].split('.')[:-1])
+
+
+def fetch_lceda_latest_ver(name):
+    response = requests.get("https://lceda.cn/page/download")
+    if response.status_code != 200:
+        print(f'Failed to fetch EasyEDA website when livechecking {name}.')
+        sys.exit(1)
+    content = etree.HTML(response.text)
+    if name.find('pro') == -1:
+        x_path = "//table/tr[3]/td[3]/div/span/a"
+    else:
+        x_path = "//table/tr[3]/td[2]/div/span[1]/a"
     dl_link = content.xpath(x_path)[0].get('href')
     return '.'.join(dl_link.split('-')[-1].split('.')[:-1])
 
@@ -61,9 +72,9 @@ def fetch_live_ver(name):
         return fetch_easyeda_latest_ver('easyeda-pro-bin')
 
     if name == 'lceda-bin':
-        return fetch_easyeda_latest_ver('lceda-bin')
+        return fetch_lceda_latest_ver('lceda-bin')
 
     if name == 'lceda-pro-bin':
-        return fetch_easyeda_latest_ver('lceda-pro-bin')
+        return fetch_lceda_latest_ver('lceda-pro-bin')
 
     return None
